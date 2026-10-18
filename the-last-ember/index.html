@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Last Ember — A Grass Studio Series</title>
+<meta name="description" content="The Last Ember, a series by Grass Studio.">
+<meta name="theme-color" content="#080908">
+<link rel="preload" as="image" href="/the-last-ember/assets/the-last-ember-background-1536.jpg" imagesrcset="/the-last-ember/assets/the-last-ember-background-900.jpg 900w, /the-last-ember/assets/the-last-ember-background-1536.jpg 1536w" imagesizes="100vw">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Rubik+Dirt&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/the-last-ember/styles.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/#/select">Grass Studio</a>
+  <nav aria-label="Breadcrumb">
+    <ol class="crumbs">
+      <li><a href="/#/select">Grass Studio</a></li>
+      <li><a href="/#/reader">Reader</a></li>
+      <li aria-current="page">The Last Ember</li>
+    </ol>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="title">
+    <img class="hero-bg" src="/the-last-ember/assets/the-last-ember-background-1536.jpg"
+         srcset="/the-last-ember/assets/the-last-ember-background-900.jpg 900w, /the-last-ember/assets/the-last-ember-background-1536.jpg 1536w"
+         sizes="100vw" width="1536" height="1024" alt="" fetchpriority="high">
+    <div class="shade" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="label">A Grass Studio Series</p>
+        <h1 id="title"><span>The Last</span> <span>Ember</span></h1>
+        <a class="back" href="/#/reader">← Series library</a>
+      </div>
+      <figure class="cover">
+        <img src="/the-last-ember/assets/the-last-ember-cover-900.webp" width="900" height="1273"
+             alt="Official cover of The Last Ember series: distressed black title lettering over a dusty, desaturated city skyline.">
+      </figure>
+    </div>
+  </section>
+
+  <section class="world" id="world" hidden aria-labelledby="world-title">
+    <h2 id="world-title" class="label">The World of The Last Ember</h2>
+    <div id="synopsis"></div>
+  </section>
+
+  <section class="books" id="books" hidden aria-labelledby="books-title">
+    <h2 id="books-title" class="label">The Books</h2>
+    <ul id="book-list"></ul>
+  </section>
+</main>
+
+<footer class="foot">
+  <a href="/#/select">Grass Studio</a>
+  <a href="/#/reader">Reader</a>
+</footer>
+
+<script src="/the-last-ember/content.js"></script>
+<script src="/the-last-ember/script.js" defer></script>
+</body>
+</html>

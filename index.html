@@ -3,61 +3,53 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>The Last Ember — A Grass Studio Series</title>
-<meta name="description" content="The Last Ember, a series by Grass Studio.">
-<meta name="theme-color" content="#080908">
-<link rel="preload" as="image" href="/the-last-ember/assets/the-last-ember-background-1536.jpg" imagesrcset="/the-last-ember/assets/the-last-ember-background-900.jpg 900w, /the-last-ember/assets/the-last-ember-background-1536.jpg 1536w" imagesizes="100vw">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Rubik+Dirt&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/the-last-ember/styles.css">
+<title>Grass Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="nav">
-  <a class="brand" href="/#/select">Grass Studio</a>
-  <nav aria-label="Breadcrumb">
-    <ol class="crumbs">
-      <li><a href="/#/select">Grass Studio</a></li>
-      <li><a href="/#/reader">Reader</a></li>
-      <li aria-current="page">The Last Ember</li>
-    </ol>
-  </nav>
-</header>
+
+<section class="view" id="intro" aria-label="Opening animation">
+  <button class="skip" id="skip" type="button">Skip</button>
+  <svg viewBox="0 0 400 600" preserveAspectRatio="xMidYMax meet" role="img" aria-label="A seedling growing from darkness">
+    <path class="stem" pathLength="1" d="M200 600 C200 520 170 470 190 400 C210 330 185 280 200 190"/>
+    <path class="leaf" style="transform-origin:192px 470px;animation-delay:1.6s" d="M192 470 C130 470 100 430 90 400 C140 395 180 420 192 470Z"/>
+    <path class="leaf" style="transform-origin:196px 400px;animation-delay:2.2s" d="M196 400 C260 405 295 365 305 335 C250 330 205 355 196 400Z"/>
+    <path class="leaf" style="transform-origin:190px 320px;animation-delay:2.8s" d="M190 320 C135 315 110 275 105 250 C150 250 182 275 190 320Z"/>
+    <path class="leaf" style="transform-origin:198px 250px;animation-delay:3.3s" d="M198 250 C250 245 275 210 280 185 C240 188 205 210 198 250Z"/>
+    <path class="leaf" style="transform-origin:200px 190px;animation-delay:3.8s" d="M200 190 C175 160 180 120 200 90 C222 120 226 160 200 190Z"/>
+  </svg>
+</section>
 
 <main>
-  <section class="hero" aria-labelledby="title">
-    <img class="hero-bg" src="/the-last-ember/assets/the-last-ember-background-1536.jpg"
-         srcset="/the-last-ember/assets/the-last-ember-background-900.jpg 900w, /the-last-ember/assets/the-last-ember-background-1536.jpg 1536w"
-         sizes="100vw" width="1536" height="1024" alt="" fetchpriority="high">
-    <div class="shade" aria-hidden="true"></div>
-    <div class="hero-inner">
-      <div class="hero-text">
-        <p class="label">A Grass Studio Series</p>
-        <h1 id="title"><span>The Last</span> <span>Ember</span></h1>
-        <a class="back" href="/#/reader">← Series library</a>
-      </div>
-      <figure class="cover">
-        <img src="/the-last-ember/assets/the-last-ember-cover-900.webp" width="900" height="1273"
-             alt="Official cover of The Last Ember series: distressed black title lettering over a dusty, desaturated city skyline.">
-      </figure>
-    </div>
-  </section>
+<section class="view" id="select" aria-labelledby="sel-title">
+  <p class="eyebrow">Grass Studio</p>
+  <h1 id="sel-title">Choose your path</h1>
+  <nav class="choices" aria-label="Audience">
+    <a class="choice" href="#/reader"><b>READER</b><span>The worlds in print</span></a>
+    <a class="choice" href="#/player"><b>PLAYER</b><span>The worlds in play</span></a>
+  </nav>
+</section>
 
-  <section class="world" id="world" hidden aria-labelledby="world-title">
-    <h2 id="world-title" class="label">The World of The Last Ember</h2>
-    <div id="synopsis"></div>
-  </section>
+<section class="view" id="reader" aria-labelledby="lib-title">
+  <div class="top"><a class="brand" href="#/select">Grass Studio</a><a href="#/select">← Back</a></div>
+  <div class="lib-head"><p class="eyebrow">Reader</p><h2 id="lib-title">The Library</h2></div>
+  <div class="grid" id="grid"></div>
+</section>
 
-  <section class="books" id="books" hidden aria-labelledby="books-title">
-    <h2 id="books-title" class="label">The Books</h2>
-    <ul id="book-list"></ul>
-  </section>
+<section class="view" id="series" aria-labelledby="ser-title">
+  <div class="top"><a class="brand" href="#/select">Grass Studio</a><a href="#/reader">← Series library</a></div>
+  <div class="series">
+    <div class="cover" id="ser-cover"></div>
+    <div><p class="eyebrow">Series</p><h2 id="ser-title"></h2><p id="ser-body"></p></div>
+  </div>
+</section>
+
+<section class="view" id="player" aria-label="Player">
+  <div class="top"><a class="brand" href="#/select">Grass Studio</a><a href="#/select">← Back</a></div>
+</section>
 </main>
 
-<footer class="foot">
-  <a href="/#/select">Grass Studio</a>
-  <a href="/#/reader">Reader</a>
-</footer>
-
-<script src="/the-last-ember/content.js"></script>
-<script src="/the-last-ember/script.js" defer></script>
+<script src="script.js" defer></script>
 </body>
 </html>
