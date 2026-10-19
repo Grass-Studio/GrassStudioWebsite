@@ -51,11 +51,6 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;letter-spacing:.02em}
 .card h3{margin-top:1rem;font-size:1.5rem}
 .card .hint{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--moss);opacity:.8;margin-top:.3rem;display:block}
 .card{animation:in .9s var(--ease) .2s both}
-/* series */
-.series{max-width:1000px;width:100%;margin:0 auto;display:grid;grid-template-columns:minmax(200px,340px) 1fr;gap:clamp(24px,5vw,64px);align-items:start}
-.series h2{font-size:clamp(2.2rem,6vw,4.2rem);margin:.6rem 0 1.5rem}
-.series p{color:rgba(240,240,232,.7);line-height:1.8;max-width:52ch}
-@media(max-width:700px){.series{grid-template-columns:1fr}.series .cover{max-width:320px}}
 /* player */
 #player{background:radial-gradient(ellipse 50% 40% at 50% 100%,rgba(16,36,24,.6),transparent),var(--bg)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important}.stem{stroke-dashoffset:0}.leaf{transform:none;opacity:1}}
