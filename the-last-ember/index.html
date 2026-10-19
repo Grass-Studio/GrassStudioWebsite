@@ -9,6 +9,7 @@
 <link rel="preload" as="image" href="/the-last-ember/assets/the-last-ember-background-1536.jpg" imagesrcset="/the-last-ember/assets/the-last-ember-background-900.jpg 900w, /the-last-ember/assets/the-last-ember-background-1536.jpg 1536w" imagesizes="100vw">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Rubik+Dirt&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/the-last-ember/styles.css">
+<link rel="stylesheet" href="/the-last-ember/archive/archive.css">
 </head>
 <body>
 <header class="nav">
@@ -20,6 +21,7 @@
       <li aria-current="page">The Last Ember</li>
     </ol>
   </nav>
+  <a class="arch-link" href="#archive">Archive</a>
 </header>
 
 <main>
@@ -46,9 +48,21 @@
     <div id="synopsis"></div>
   </section>
 
-  <section class="books" id="books" hidden aria-labelledby="books-title">
+  <section class="books" id="books" aria-labelledby="books-title">
     <h2 id="books-title" class="label">The Books</h2>
-    <ul id="book-list"></ul>
+    <ul class="books-grid" id="book-list"></ul>
+  </section>
+
+  <section class="archive" id="archive" aria-labelledby="archive-title">
+    <h2 id="archive-title" class="label">The Last Ember Archive</h2>
+    <p class="archive-sub">A record of the people, events, mysteries, and history behind the story.</p>
+    <div class="arch-bar">
+      <div><label for="arch-level">How far have you read?</label><select id="arch-level"></select></div>
+      <div id="arch-search"><label for="arch-q">Search the archive</label><input id="arch-q" type="search" autocomplete="off" placeholder="Name, event, clue…"></div>
+    </div>
+    <p class="arch-note">Only what your reading level unlocks is shown, including search results and links. Books 1 and 2 (Origins, Born to Survive) are stated by the author; the position of Be Aware is awaiting confirmation, so it stays behind “Through Book 3”.</p>
+    <div class="arch-tabs" id="arch-tabs" role="tablist" aria-label="Archive categories"></div>
+    <div id="arch-panel"></div>
   </section>
 </main>
 
@@ -57,7 +71,16 @@
   <a href="/#/reader">Reader</a>
 </footer>
 
-<script src="/the-last-ember/content.js"></script>
+<script src="/the-last-ember/series-content.js"></script>
+<script src="/the-last-ember/archive/spoilers.js"></script>
+<script src="/the-last-ember/archive/characters.js"></script>
+<script src="/the-last-ember/archive/events.js"></script>
+<script src="/the-last-ember/archive/mysteries.js"></script>
+<script src="/the-last-ember/archive/theories.js"></script>
+<script src="/the-last-ember/archive/timeline.js"></script>
+<script src="/the-last-ember/archive/virus.js"></script>
+<script src="/the-last-ember/archive/artworks.js"></script>
 <script src="/the-last-ember/script.js" defer></script>
+<script src="/the-last-ember/archive/archive.js" defer></script>
 </body>
 </html>

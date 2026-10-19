@@ -53,7 +53,7 @@ h1 span+span{color:var(--sepia)}
   h1{margin-bottom:1.4rem}
 }
 
-.world,.books{max-width:760px;margin:0 auto;padding:clamp(56px,10vw,120px) clamp(20px,5vw,32px);border-top:1px solid rgba(119,115,107,.25)}
+.world,.books,.archive{max-width:760px;margin:0 auto;padding:clamp(56px,10vw,120px) clamp(20px,5vw,32px);border-top:1px solid rgba(119,115,107,.25)}
 .world p{margin:1.5rem 0 0;font-size:1.05rem;color:var(--beige)}
 .books{max-width:1000px}
 .books ul{list-style:none;margin:2rem 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,200px),1fr));gap:32px}
